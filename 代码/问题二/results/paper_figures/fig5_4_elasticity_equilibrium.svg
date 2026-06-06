@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="460.0" y="30" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei" font-size="18">图5-4 长期需求弹性下的供需平衡点</text>
+<line x1="78" y1="475.0" x2="888" y2="475.0" stroke="#dddddd"/>
+<text x="68" y="479.0" text-anchor="end" font-family="Arial" font-size="12">70</text>
+<line x1="78" y1="404.2" x2="888" y2="404.2" stroke="#dddddd"/>
+<text x="68" y="408.2" text-anchor="end" font-family="Arial" font-size="12">90</text>
+<line x1="78" y1="333.3" x2="888" y2="333.3" stroke="#dddddd"/>
+<text x="68" y="337.3" text-anchor="end" font-family="Arial" font-size="12">110</text>
+<line x1="78" y1="262.5" x2="888" y2="262.5" stroke="#dddddd"/>
+<text x="68" y="266.5" text-anchor="end" font-family="Arial" font-size="12">130</text>
+<line x1="78" y1="191.7" x2="888" y2="191.7" stroke="#dddddd"/>
+<text x="68" y="195.7" text-anchor="end" font-family="Arial" font-size="12">150</text>
+<line x1="78" y1="120.8" x2="888" y2="120.8" stroke="#dddddd"/>
+<text x="68" y="124.8" text-anchor="end" font-family="Arial" font-size="12">170</text>
+<line x1="78" y1="50.0" x2="888" y2="50.0" stroke="#dddddd"/>
+<text x="68" y="54.0" text-anchor="end" font-family="Arial" font-size="12">190</text>
+<polyline fill="none" stroke="#333333" stroke-width="2.4" points="78.0,108.9 92.5,118.7 106.9,128.4 121.4,137.8 135.9,147.1 150.3,156.2 164.8,165.2 179.2,173.9 193.7,182.5 208.2,191.0 222.6,199.3 237.1,207.4 251.6,215.4 266.0,223.3 280.5,231.0 295.0,238.5 309.4,246.0 323.9,253.3 338.4,260.4 352.8,267.5 367.3,274.4 381.8,281.1 396.2,287.8 410.7,294.4 425.1,300.8 439.6,307.1 454.1,313.3 468.5,319.4 483.0,325.4 497.5,331.3 511.9,337.1 526.4,342.7 540.9,348.3 555.3,353.8 569.8,359.2 584.2,364.5 598.7,369.7 613.2,374.8 627.6,379.9 642.1,384.8 656.6,389.7 671.0,394.5 685.5,399.2 700.0,403.8 714.4,408.3 728.9,412.8 743.4,417.2 757.8,421.5 772.3,425.7 786.8,429.9 801.2,434.0 815.7,438.1 830.1,442.0 844.6,445.9 859.1,449.8 873.5,453.6 888.0,457.3"/>
+<line x1="685.5" y1="50" x2="685.5" y2="475" stroke="#2ca02c" stroke-dasharray="6,5"/>
+<circle cx="685.5" cy="425.7" r="5" fill="#2ca02c"/>
+<text x="693.5" y="417.7" font-family="Arial, PingFang SC, Microsoft YaHei" font-size="13">乐观(83.9)</text>
+<line x1="540.9" y1="50" x2="540.9" y2="475" stroke="#1f77b4" stroke-dasharray="6,5"/>
+<circle cx="540.9" cy="348.3" r="5" fill="#1f77b4"/>
+<text x="548.9" y="340.3" font-family="Arial, PingFang SC, Microsoft YaHei" font-size="13">基准(105.8)</text>
+<line x1="280.5" y1="50" x2="280.5" y2="475" stroke="#d62728" stroke-dasharray="6,5"/>
+<circle cx="280.5" cy="231.0" r="5" fill="#d62728"/>
+<text x="288.5" y="223.0" font-family="Arial, PingFang SC, Microsoft YaHei" font-size="13">悲观(138.9)</text>
+<line x1="78" y1="475" x2="888" y2="475" stroke="#333"/>
+<line x1="78" y1="50" x2="78" y2="475" stroke="#333"/>
+<text x="460.0" y="522" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei" font-size="13">有效供给/需求（百万桶/日）</text>
+<text x="18" y="270.0" transform="rotate(-90 18 270.0)" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei" font-size="13">油价（美元/桶）</text>
+</svg>
