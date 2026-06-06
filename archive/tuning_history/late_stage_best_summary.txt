@@ -1,0 +1,11 @@
+best_params
+l_early=1600.0
+l_late=1350.0
+t_late=30
+tau_b=15
+b_slope=25.0
+b_max=300.0
+sse=3225.781121356895
+peak=103.10673624922573
+late_mean=102.68002540824985
+loss=3615.73061944381
