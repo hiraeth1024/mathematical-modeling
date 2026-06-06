@@ -285,4 +285,14 @@
   - 每节应包含的内容
   - 推荐图表清单
   - 建议写作顺序
+- 已完成一次补充模型测试：新增中期局部回调项 `M_t`。
+- 已新增：
+  - `mid_correction_calibration.py`
+  - `mid_correction_results.csv`
+  - `mid_correction_best_summary.txt`
+  - `mid_correction_best_simulation.csv`
+- 当前测试结论：
+  - 4月中旬回落拟合有所改善
+  - 但5月初高位平台被明显压低
+  - 整体拟合劣于当前最终模型
 - 等待用户确认后继续执行下一步。

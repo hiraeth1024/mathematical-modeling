@@ -3140,6 +3140,63 @@ Q_{\max}\left(1-e^{-k_Q(t-\tau_Q)}\right), & t\ge \tau_Q
 
 就“问题1”的短期模型本身来说，这一版已经可以作为主模型候选。
 
+### 补充测试：引入中期局部回调项 `M_t`
+
+为修正 4 月中旬附近的明显回落，本轮在当前最终模型上额外加入了一个中期局部负向修正项：
+
+\[
+M_t = A \exp\left(-\frac{(t-\mu)^2}{2\sigma^2}\right)
+\]
+
+并将价格更新式改写为近似：
+
+\[
+P_{t+1}=P_t(1+\beta g_t - M_t)
+\]
+
+对应测试脚本与结果文件：
+
+- [mid_correction_calibration.py](<D:\codespace\mathematical-modeling\question1\mid_correction_calibration.py>)
+- [mid_correction_results.csv](<D:\codespace\mathematical-modeling\question1\mid_correction_results.csv>)
+- [mid_correction_best_summary.txt](<D:\codespace\mathematical-modeling\question1\mid_correction_best_summary.txt>)
+- [mid_correction_best_simulation.csv](<D:\codespace\mathematical-modeling\question1\mid_correction_best_simulation.csv>)
+
+当前最优参数为：
+
+- `beta = 0.078`
+- `tau_r = 10`
+- `r_max = 500`
+- `c_max = 375`
+- `k_c = 0.0035`
+- `tau_q = 62`
+- `q_max = 0.07`
+- `k_q = 0.08`
+- `m_amp = 0.01`
+- `m_mu = 40`
+- `m_sigma = 3`
+
+结果摘要：
+
+- `SSE = 2511.0817`
+- `peak = 105.1031`
+- `mid_mean = 101.7377`
+- `late_mean = 93.5930`
+
+关键现象：
+
+1. 4 月中旬这段回落被明显拉下来了；
+2. 但 5 月初高位平台也被一起压塌了；
+3. `2026-05-04` 模拟值只有 `101.4857`，明显低于真实值 `114.06`；
+4. 整体 `SSE` 比当前最终模型更差。
+
+### 当前判断
+
+这次测试说明：
+
+- 中期局部回调项 `M_t` 的方向是对症的；
+- 但如果直接以价格修正项形式加入，会把中期高位平台整体压得过低；
+- 因此它目前**不适合作为主模型的最终保留结构**。
+
 ### 步骤27：整理问题1的论文写作框架
 
 本步骤已新增独立文档：

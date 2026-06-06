@@ -8,10 +8,8 @@ actualPrice = data.actual_close;
 
 validActual = ~ismissing(actualPrice);
 
-fig = figure('Color', 'w', 'Position', [100, 100, 1100, 520]);
+fig = figure;
 hold on;
-grid on;
-box on;
 
 plot(data.date, simPrice, ...
     'LineWidth', 2.2, ...
@@ -31,16 +29,9 @@ xline(datetime(2026, 2, 28), '--k', 'Conflict Start', ...
     'LabelVerticalAlignment', 'bottom', ...
     'LabelHorizontalAlignment', 'left');
 
-title('Brent Crude Oil: Actual vs Model Price', 'FontSize', 15, 'FontWeight', 'bold');
-xlabel('Date', 'FontSize', 12);
-ylabel('Price (USD/barrel)', 'FontSize', 12);
 legend('Location', 'northwest');
 
 ax = gca;
-ax.FontSize = 11;
-ax.LineWidth = 1;
-
-xtickformat('yyyy-MM-dd');
-xtickangle(30);
+apply_plot_style(fig, ax, 'Brent Crude Oil: Actual vs Model Price', 'Price (USD/barrel)');
 
 saveas(fig, 'plot_01_actual_vs_model.png');
