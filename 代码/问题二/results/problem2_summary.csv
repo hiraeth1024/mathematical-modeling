@@ -1,0 +1,4 @@
+scenario,day90_price,day180_price,day180_equilibrium,day180_stock,day180_risk
+baseline,96.54,105.62,105.77,241.25,0.00
+optimistic,94.72,84.36,83.91,276.25,0.00
+pessimistic,98.63,169.09,138.90,16.25,34.45
