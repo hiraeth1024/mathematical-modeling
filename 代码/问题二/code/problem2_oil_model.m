@@ -4,7 +4,7 @@
 
 clear; clc;
 
-csvPath = "附件1.布伦特原油期货主力合约价格数据.csv";
+csvPath = "/Users/hybuzhy/Documents/Mathematical modeling/附件1.布伦特原油期货主力合约价格数据.csv";
 outDir = "results";
 if ~exist(outDir, "dir")
     mkdir(outDir);
