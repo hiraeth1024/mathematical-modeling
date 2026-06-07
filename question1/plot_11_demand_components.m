@@ -13,10 +13,9 @@ priceElasticityFactor = (baseline.price ./ P0) .^ epsilon;
 demandCutFactor = 1 - baseline.Q_t;
 effectiveDemand = baseline.D_t;
 
-fig = figure;
-tiledlayout(2,1, 'Padding', 'compact', 'TileSpacing', 'compact');
+fig = figure('Color', 'w', 'Position', [100, 100, 1120, 760]);
 
-nexttile;
+ax1 = subplot(2, 1, 1);
 hold on;
 plot(baseline.date, panicMultiplier, ...
     'LineWidth', 2.0, ...
@@ -36,10 +35,9 @@ xline(datetime(2026, 2, 28), '--k', 'Conflict Start', ...
     'LabelVerticalAlignment', 'bottom', ...
     'LabelHorizontalAlignment', 'left');
 legend('Location', 'eastoutside');
-ax1 = gca;
-apply_plot_style(fig, ax1, 'Demand-Side Component Evolution', 'Multiplier / Factor');
+style_axis(ax1, 'Demand-Side Component Evolution', 'Multiplier / Factor');
 
-nexttile;
+ax2 = subplot(2, 1, 2);
 hold on;
 plot(baseline.date, effectiveDemand, ...
     'LineWidth', 2.3, ...
@@ -50,7 +48,21 @@ xline(datetime(2026, 2, 28), '--k', 'Conflict Start', ...
     'LabelVerticalAlignment', 'bottom', ...
     'LabelHorizontalAlignment', 'left');
 legend('Location', 'eastoutside');
-ax2 = gca;
-apply_plot_style(fig, ax2, '', 'Demand (10^4 barrels/day)');
+style_axis(ax2, 'Effective Demand Evolution', 'Demand (10^4 barrels/day)');
 
 saveas(fig, 'plot_11_demand_components.png');
+
+function style_axis(ax, chartTitle, yLabelText)
+    grid(ax, 'on');
+    box(ax, 'on');
+    ax.FontSize = 11;
+    ax.LineWidth = 1.1;
+    ax.GridColor = [0.82, 0.82, 0.82];
+    ax.GridAlpha = 0.9;
+    ax.Layer = 'top';
+    title(ax, chartTitle, 'FontSize', 14, 'FontWeight', 'bold');
+    xlabel(ax, 'Date', 'FontSize', 11, 'FontWeight', 'bold');
+    ylabel(ax, yLabelText, 'FontSize', 11, 'FontWeight', 'bold');
+    xtickformat(ax, 'yyyy-MM-dd');
+    xtickangle(ax, 25);
+end

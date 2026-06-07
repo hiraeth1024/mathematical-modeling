@@ -8,7 +8,6 @@ actualPrice = data.actual_close;
 validActual = ~ismissing(actualPrice);
 
 fig = figure('Color', 'w', 'Position', [80, 80, 1200, 850]);
-tiledlayout(3,1, 'Padding', 'compact', 'TileSpacing', 'compact');
 
 windows = {
     datetime(2026,3,1), datetime(2026,3,12), 'Early Shock Stage';
@@ -17,7 +16,7 @@ windows = {
 };
 
 for i = 1:3
-    nexttile;
+    ax = subplot(3, 1, i);
     startDate = windows{i,1};
     endDate = windows{i,2};
     stageTitle = windows{i,3};
@@ -46,11 +45,11 @@ for i = 1:3
     ylabel('Price (USD/barrel)', 'FontSize', 11, 'FontWeight', 'bold');
     legend('Location', 'best');
 
-    ax = gca;
     ax.FontSize = 10.5;
     ax.LineWidth = 1.0;
     ax.GridColor = [0.82, 0.82, 0.82];
     ax.GridAlpha = 0.9;
+    ax.Layer = 'top';
     xtickformat('yyyy-MM-dd');
     xtickangle(25);
 end
