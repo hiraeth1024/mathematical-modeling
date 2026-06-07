@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="360.0" y="32.0" text-anchor="middle" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="22" font-weight="bold">图3-2 布伦特原油收盘价箱线图</text>
+<line x1="105" y1="532.0" x2="650" y2="532.0" stroke="#E5E5E5"/>
+<text x="93.0" y="532.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">20</text>
+<line x1="105" y1="490.0" x2="650" y2="490.0" stroke="#E5E5E5"/>
+<text x="93.0" y="490.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">30</text>
+<line x1="105" y1="448.0" x2="650" y2="448.0" stroke="#E5E5E5"/>
+<text x="93.0" y="448.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">40</text>
+<line x1="105" y1="406.0" x2="650" y2="406.0" stroke="#E5E5E5"/>
+<text x="93.0" y="406.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">50</text>
+<line x1="105" y1="364.0" x2="650" y2="364.0" stroke="#E5E5E5"/>
+<text x="93.0" y="364.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">60</text>
+<line x1="105" y1="322.0" x2="650" y2="322.0" stroke="#E5E5E5"/>
+<text x="93.0" y="322.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">70</text>
+<line x1="105" y1="280.0" x2="650" y2="280.0" stroke="#E5E5E5"/>
+<text x="93.0" y="280.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">80</text>
+<line x1="105" y1="238.0" x2="650" y2="238.0" stroke="#E5E5E5"/>
+<text x="93.0" y="238.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">90</text>
+<line x1="105" y1="196.0" x2="650" y2="196.0" stroke="#E5E5E5"/>
+<text x="93.0" y="196.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">100</text>
+<line x1="105" y1="154.0" x2="650" y2="154.0" stroke="#E5E5E5"/>
+<text x="93.0" y="154.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">110</text>
+<line x1="105" y1="112.0" x2="650" y2="112.0" stroke="#E5E5E5"/>
+<text x="93.0" y="112.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">120</text>
+<line x1="105" y1="70.0" x2="650" y2="70.0" stroke="#E5E5E5"/>
+<text x="93.0" y="70.0" text-anchor="end" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="12" font-weight="normal">130</text>
+<line x1="105" y1="532" x2="650" y2="532" stroke="#333" stroke-width="1.5"/>
+<line x1="105" y1="70" x2="105" y2="532" stroke="#333" stroke-width="1.5"/>
+<line x1="377.5" y1="152.2" x2="377.5" y2="271.1" stroke="#333" stroke-width="2"/>
+<line x1="377.5" y1="351.0" x2="377.5" y2="470.5" stroke="#333" stroke-width="2"/>
+<line x1="320.8" y1="152.2" x2="434.2" y2="152.2" stroke="#333" stroke-width="2"/>
+<line x1="320.8" y1="470.5" x2="434.2" y2="470.5" stroke="#333" stroke-width="2"/>
+<rect x="292.5" y="271.1" width="170.0" height="79.8" fill="#F4B183" stroke="#333" stroke-width="2"/>
+<line x1="292.5" y1="312.7" x2="462.5" y2="312.7" stroke="#C00000" stroke-width="3"/>
+<circle cx="357.5" cy="484.0" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="487.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="497.6" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="490.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="492.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="490.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="488.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="489.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="492.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="497.4" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="504.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="507.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="508.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="491.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="476.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="479.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="474.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="481.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="482.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="489.6" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="498.4" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="481.0" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="482.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="491.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="516.4" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="514.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="510.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="510.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="519.4" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="518.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="513.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="504.0" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="504.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="498.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="481.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="490.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="492.6" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="486.4" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="489.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="492.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="492.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="471.0" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="134.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="120.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="93.6" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="72.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="143.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="143.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="150.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="121.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="134.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="125.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="149.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="147.4" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="149.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="140.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="148.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="137.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="151.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="150.6" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="149.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="147.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="135.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="131.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="121.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="127.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="129.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="119.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="107.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="112.0" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="107.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="95.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="99.7" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="103.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="102.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="121.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="129.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="128.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="150.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="147.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="146.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="357.5" cy="148.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="362.5" cy="137.2" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="367.5" cy="144.3" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="372.5" cy="147.8" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="377.5" cy="137.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="382.5" cy="143.5" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="387.5" cy="150.4" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="392.5" cy="136.9" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<circle cx="397.5" cy="150.1" r="3.2" fill="white" stroke="#4E79A7" stroke-width="1.5"/>
+<text x="377.5" y="564.0" text-anchor="middle" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="15" font-weight="normal">收盘价</text>
+<text x="28.0" y="310.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 28 310.0)" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="15" font-weight="normal">价格（美元/桶）</text>
+<text x="360.0" y="596.0" text-anchor="middle" dominant-baseline="middle" font-family="Songti SC, SimSun, Microsoft YaHei, PingFang SC, Arial Unicode MS, serif" font-size="13" font-weight="normal">Q1=63.10  中位数=72.22  Q3=82.11  异常点=90个</text>
+</svg>

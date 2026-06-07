@@ -1,60 +1,137 @@
-from graphviz import Digraph
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
 
-dot = Digraph(
-    name="problem2_simple_flowchart",
-    format="png",
-    encoding="utf-8"
+import matplotlib.pyplot as plt
+
+import matplotlib.font_manager as fm
+
+# 自动查找可用中文字体
+
+font_candidates = [
+
+    "SimHei",
+
+    "Microsoft YaHei",
+
+    "PingFang SC",
+
+    "Noto Sans CJK SC",
+
+    "Noto Sans CJK JP",
+
+    "WenQuanYi Zen Hei",
+
+    "Arial Unicode MS"
+
+]
+
+available_fonts = {f.name for f in fm.fontManager.ttflist}
+
+selected_font = None
+
+for font in font_candidates:
+
+    if font in available_fonts:
+
+        selected_font = font
+
+        break
+
+if selected_font:
+
+    plt.rcParams["font.sans-serif"] = [selected_font]
+
+    plt.rcParams["axes.unicode_minus"] = False
+
+    print(f"使用字体：{selected_font}")
+
+else:
+
+    plt.rcParams["font.sans-serif"] = ["DejaVu Sans"]
+
+    plt.rcParams["axes.unicode_minus"] = False
+
+    print("未找到中文字体，建议将图标题改为英文，或安装 Noto Sans CJK 字体")
+
+# ======================
+# 1. 读取数据
+# ======================
+file_path = "/Users/hybuzhy/Documents/Mathematical modeling/附件1.布伦特原油期货主力合约价格数据.csv"
+df = pd.read_csv(file_path)
+
+# 创建输出目录
+output_dir = "results/paper_figures"
+os.makedirs(output_dir, exist_ok=True)
+
+# 设置中文字体
+plt.rcParams["font.sans-serif"] = ["SimHei", "Microsoft YaHei", "PingFang SC"]
+plt.rcParams["axes.unicode_minus"] = False
+
+
+# ======================
+# 2. 缺失值统计图
+# ======================
+missing_count = df.isnull().sum()
+
+plt.figure(figsize=(9, 5))
+plt.bar(missing_count.index, missing_count.values)
+
+plt.title("布伦特原油价格数据缺失值统计图", fontsize=14)
+plt.xlabel("字段名称", fontsize=12)
+plt.ylabel("缺失值数量", fontsize=12)
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+
+plt.savefig(
+    f"{output_dir}/fig3_1_missing_values.png",
+    dpi=300,
+    bbox_inches="tight"
+)
+plt.close()
+
+dsadad
+# ======================
+# 3. 自动识别收盘价字段
+# ======================
+possible_close_cols = ["收盘价", "收盘", "close", "Close", "CLOSE", "close_price"]
+
+close_col = None
+for col in possible_close_cols:
+    if col in df.columns:
+        close_col = col
+        break
+
+if close_col is None:
+    raise ValueError(f"未找到收盘价字段，请检查字段名。当前字段为：{list(df.columns)}")
+
+# 转换为数值型
+df[close_col] = pd.to_numeric(df[close_col], errors="coerce")
+
+
+# ======================
+# 4. 收盘价箱线图
+# ======================
+plt.figure(figsize=(6, 5))
+plt.boxplot(
+    df[close_col].dropna(),
+    vert=True,
+    patch_artist=True,
+    labels=["收盘价"]
 )
 
-# 图形整体设置
-dot.attr(
-    rankdir="TB",
-    bgcolor="white",
-    splines="ortho",
-    nodesep="0.5",
-    ranksep="0.6",
-    dpi="300"          # 输出 300 DPI
+plt.title("布伦特原油收盘价箱线图", fontsize=14)
+plt.ylabel("价格（美元/桶）", fontsize=12)
+plt.tight_layout()
+
+plt.savefig(
+    f"{output_dir}/fig3_2_close_price_boxplot.png",
+    dpi=300,
+    bbox_inches="tight"
 )
+plt.close()
 
-# 节点样式
-dot.attr(
-    "node",
-    shape="rect",
-    style="rounded,filled",
-    fontname="Microsoft YaHei",
-    fontsize="12",
-    color="#4A6FA5",
-    fillcolor="#EAF2FB",
-    penwidth="1.4"
-)
 
-# 边样式
-dot.attr(
-    "edge",
-    fontname="Microsoft YaHei",
-    fontsize="11",
-    color="#555555",
-    arrowsize="0.8"
-)
-
-# 节点
-dot.node("A", "确定研究对象\n90—180天中长期封锁情景", fillcolor="#D6EAF8")
-dot.node("B", "提取关键影响因素\n供给缺口、库存、增产、需求弹性")
-dot.node("C", "构建中长期供需调节模型")
-dot.node("D", "设定供需均衡条件\n有效供给 = 有效需求")
-dot.node("E", "求解油价平衡点\n或平衡区间")
-dot.node("F", "判断库存阈值\n识别价格跳变风险", shape="diamond", fillcolor="#FCF3CF")
-dot.node("G", "输出油价预测结果\n并分析影响因素", fillcolor="#D5F5E3")
-
-# 连线
-dot.edge("A", "B")
-dot.edge("B", "C")
-dot.edge("C", "D")
-dot.edge("D", "E")
-dot.edge("E", "F")
-dot.edge("F", "G")
-
-# 输出 300DPI PNG
-dot.render("问题二_简化思路流程图_300dpi", cleanup=True)
-
-print("已生成：问题二_简化思路流程图_300dpi.png")
+print("图像已生成：")
+print(f"{output_dir}/fig3_1_missing_values.png")
+print(f"{output_dir}/fig3_2_close_price_boxplot.png")
