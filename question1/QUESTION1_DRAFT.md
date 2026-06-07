@@ -193,7 +193,7 @@ I_{t+1} = \max(I_t-C_t,0)
 
 综上，问题一的最终参数设定并非完全由主观给定，而是在题目提供的物理约束、市场经济含义和价格数据拟合结果的共同作用下逐步确定的。最终参数既保持了可解释性，也保证了模型能够在总体趋势上较好匹配实际价格路径。
 
-【插入表1：问题1最终模型参数表。对应 [QUESTION1_TABLES.md](<D:\codespace\mathematical-modeling\question1\QUESTION1_TABLES.md>) 中“表1 问题1最终模型参数表”。建议插入在本节末尾，用于集中展示参数取值、单位与来源。】
+【插入表1：问题1最终模型参数表。对应 [QUESTION1_TABLES.md](<D:\codespace\mathematical-modeling\question1\QUESTION1_TABLES.md>) 中“表1 问题1最终模型参数表”。建议放在本节末尾，用于集中展示最终参数取值、单位与来源。】
 
 ### 4.3.2. 基于布伦特原油价格数据的模型校准
 
@@ -223,9 +223,13 @@ I_{t+1} = \max(I_t-C_t,0)
 
 因此，本文对拟合效果的最终评价是：该模型能够较好反映霍尔木兹海峡封锁背景下短期油价“前期快速上冲—中期高位维持—后期逐步回落”的总体演化规律，并能够解释现实油价为何没有突破 `200` 美元/桶以及为何在后期出现明显回落。虽然模型对中期局部极值和短期剧烈波动的刻画仍存在一定误差，但作为一个以机制解释为核心的短期冲击模型，其拟合质量已经满足问题一的分析需求。
 
-【插入表2：问题1最终模型拟合结果表。对应 [QUESTION1_TABLES.md](<D:\codespace\mathematical-modeling\question1\QUESTION1_TABLES.md>) 中“表2 问题1最终模型拟合结果表”。建议紧接在本节后，用于汇总 SSE、峰值价格、中期均值、5 月下旬均值等指标。】
+【插入表2：问题1最终模型拟合结果表。对应 [QUESTION1_TABLES.md](<D:\codespace\mathematical-modeling\question1\QUESTION1_TABLES.md>) 中“表2 问题1最终模型拟合结果表”。建议紧接本节正文之后，用于汇总 SSE、峰值价格、中期均值、5 月下旬均值等核心指标。】
 
-【插入图1：实际价格与模型价格对比图。对应 MATLAB 脚本 [plot_01_actual_vs_model.m](<D:\codespace\mathematical-modeling\question1\plot_01_actual_vs_model.m>) 生成的图片。建议插入在本节末尾，用于直观展示模型对总体趋势的拟合效果。】
+【插入图1：实际价格与模型价格对比图。对应 MATLAB 脚本 [plot_01_actual_vs_model.m](<D:\codespace\mathematical-modeling\question1\plot_01_actual_vs_model.m>) 生成的图片。建议放在表2之后，用于直观展示模型对总体趋势的拟合效果。】
+
+【插入图2：价格与误差双轴图。对应 MATLAB 脚本 [plot_12_price_error_dual_axis.m](<D:\codespace\mathematical-modeling\question1\plot_12_price_error_dual_axis.m>) 生成的图片。建议紧接图1之后，用于同时展示实际价格、模型价格与逐日误差变化。】
+
+【插入图3：模型残差图。对应 MATLAB 脚本 [plot_13_residuals.m](<D:\codespace\mathematical-modeling\question1\plot_13_residuals.m>) 生成的图片。建议放在图2之后，用于突出 4 月中旬等局部阶段的拟合偏差。】
 
 ## 4.4. 短期油价模拟结果分析
 
@@ -241,7 +245,9 @@ I_{t+1} = \max(I_t-C_t,0)
 
 总体而言，问题一的最终模型虽然没有逐点精确复现全部日度波动，但已经成功刻画了霍尔木兹海峡封锁下短期油价的主趋势演化：前期因冲击而急剧上升，中期因多种力量对冲而高位盘整，后期则在需求端调整下逐步回归。这说明模型在解释阶段性价格变化方面具备较好的有效性。
 
-【插入图2：基准情景与无缓冲情景对比图。对应 MATLAB 脚本 [plot_02_baseline_vs_no_buffer.m](<D:\codespace\mathematical-modeling\question1\plot_02_baseline_vs_no_buffer.m>) 生成的图片。建议插入在本节末尾，用于说明若无缓冲机制，油价将逼近 200 美元。】
+【插入图4：基准情景与无缓冲情景对比图。对应 MATLAB 脚本 [plot_02_baseline_vs_no_buffer.m](<D:\codespace\mathematical-modeling\question1\plot_02_baseline_vs_no_buffer.m>) 生成的图片。建议放在本节末尾，用于说明若无缓冲机制，油价将逼近 200 美元。】
+
+【插入图5：关键阶段局部放大图。对应 MATLAB 脚本 [plot_14_key_stage_zoom.m](<D:\codespace\mathematical-modeling\question1\plot_14_key_stage_zoom.m>) 生成的图片。建议紧接图4之后，用于放大展示冲突初期、4 月中旬和 5 月下旬三个局部阶段的拟合细节。】
 
 ### 4.4.2. 供需缺口与库存缓冲效果分析
 
@@ -255,7 +261,11 @@ I_{t+1} = \max(I_t-C_t,0)
 
 因此，从问题一的结果来看，供需缺口是短期价格变化的直接驱动变量，而商业库存则是短期内最重要的供给缓冲器之一。正是库存缓冲削弱了名义供给冲击向价格端的完全传导，使油价在大规模封锁背景下仍然没有突破 `200` 美元/桶。
 
-【插入图3：基准情景与无库存缓冲情景对比图。对应 MATLAB 脚本 [plot_03_baseline_vs_no_inventory.m](<D:\codespace\mathematical-modeling\question1\plot_03_baseline_vs_no_inventory.m>) 生成的图片。建议插入在本节末尾，用于突出库存缓冲对压低峰值和稳定中后期价格的作用。】
+【插入图6：供需缺口动态变化图。对应 MATLAB 脚本 [plot_07_supply_demand_gap.m](<D:\codespace\mathematical-modeling\question1\plot_07_supply_demand_gap.m>) 生成的图片。建议放在本节前半部分关于供需缺口解释之后，用于展示基准情景下 `g_t` 的时间演化。】
+
+【插入图7：基准情景与无库存缓冲情景对比图。对应 MATLAB 脚本 [plot_03_baseline_vs_no_inventory.m](<D:\codespace\mathematical-modeling\question1\plot_03_baseline_vs_no_inventory.m>) 生成的图片。建议放在库存缓冲机制分析之后，用于突出库存缓冲对压低峰值和稳定中后期价格的作用。】
+
+【插入图8：库存变化曲线图。对应 MATLAB 脚本 [plot_08_inventory_curve.m](<D:\codespace\mathematical-modeling\question1\plot_08_inventory_curve.m>) 生成的图片。建议放在本节末尾，用于展示商业库存 `I_t` 随时间的消耗过程。】
 
 ### 4.4.3. 战略储备和绕道运输影响分析
 
@@ -271,11 +281,19 @@ I_{t+1} = \max(I_t-C_t,0)
 
 综上，战略储备释放和绕道运输恢复在问题一中的作用主要表现为三点：其一，持续削弱中期供需缺口；其二，防止价格在高位进一步失控；其三，与库存缓冲共同构成供给侧稳定机制。虽然它们单独不足以解释后期价格回落，但若没有这两类机制，市场将更接近无缓冲情景的极端路径。因此，它们是短期油价没有冲到 `200` 美元的重要原因之一。
 
-【插入图4：基准情景与无后期需求收缩情景对比图。对应 MATLAB 脚本 [plot_04_baseline_vs_no_late_demand_cut.m](<D:\codespace\mathematical-modeling\question1\plot_04_baseline_vs_no_late_demand_cut.m>) 生成的图片。建议插入在本节后半部分，用于说明仅靠供给侧缓冲不足以解释后期回落，后期需求收缩项 `Q_t` 是必要补充。】
+【插入图9：机制分解图。对应 MATLAB 脚本 [plot_09_mechanism_decomposition.m](<D:\codespace\mathematical-modeling\question1\plot_09_mechanism_decomposition.m>) 生成的图片。建议放在本节前半部分，用于展示 `L_t / R_t / C_t / B_t / Q_t` 的时间路径。】
 
-【插入表3：问题1情景分析结果表。对应 [QUESTION1_TABLES.md](<D:\codespace\mathematical-modeling\question1\QUESTION1_TABLES.md>) 中“表3 问题1情景分析结果表”。建议插入在本节末尾，用于汇总各情景的峰值价格、峰值日期、中期均值和 5 月下旬均值。】
+【插入图10：供给端组成堆叠图。对应 MATLAB 脚本 [plot_10_supply_stack.m](<D:\codespace\mathematical-modeling\question1\plot_10_supply_stack.m>) 生成的图片。建议放在战略储备与绕道运输分析部分，用于展示 `S_0-L_t`、`R_t`、`C_t`、`B_t` 如何共同构成有效供给。】
+
+【插入图11：需求端组成图。对应 MATLAB 脚本 [plot_11_demand_components.m](<D:\codespace\mathematical-modeling\question1\plot_11_demand_components.m>) 生成的图片。建议放在解释后期需求收缩项 `Q_t` 时，用于展示 `F_t`、价格弹性项和 `Q_t` 对有效需求的共同作用。】
+
+【插入图12：基准情景与无后期需求收缩情景对比图。对应 MATLAB 脚本 [plot_04_baseline_vs_no_late_demand_cut.m](<D:\codespace\mathematical-modeling\question1\plot_04_baseline_vs_no_late_demand_cut.m>) 生成的图片。建议紧接图11之后，用于说明仅靠供给侧缓冲不足以解释后期回落，后期需求收缩项 `Q_t` 是必要补充。】
+
+【插入表3：问题1情景分析结果表。对应 [QUESTION1_TABLES.md](<D:\codespace\mathematical-modeling\question1\QUESTION1_TABLES.md>) 中“表3 问题1情景分析结果表”。建议放在本节末尾，用于汇总各情景的峰值价格、峰值日期、中期均值和 5 月下旬均值。】
 
 【插入表4：相对基准情景的差值表。对应 [QUESTION1_TABLES.md](<D:\codespace\mathematical-modeling\question1\QUESTION1_TABLES.md>) 中“表4 相对基准情景的差值表”。建议紧接表3之后，用于突出库存缓冲和后期需求收缩项的边际贡献。】
+
+【插入图13：情景差值柱状图。对应 MATLAB 脚本 [plot_15_scenario_difference_bar.m](<D:\codespace\mathematical-modeling\question1\plot_15_scenario_difference_bar.m>) 生成的图片。建议紧接表4之后，用于更直观地比较不同情景相对基准情景的峰值差值、5 月下旬均值差值与末端价格差值。】
 
 ## 4.5. 问题一小结
 
